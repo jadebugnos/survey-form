@@ -1,0 +1,58 @@
+<DOCTYPE! html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title class="title">Survey Form</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+   <body>
+     <h1 id="title">Guitar Enthusiast Survey</h1>
+     <p id="description">Thank you for taking the time to participate in this survey! Your feedback will help us understand the preferences and interests of guitar enthusiasts like you. Please fill out the following questions:</p>
+     <form id="survey-form">
+       <div class="text">
+       <label for="name" id="name-label">Name: <input required placeholder="write your name here" id="name" type="text"></label>
+       </div>
+       <div class="email">
+       <label for="email-" id="email-label">Email: <input required placeholder="Write your email here" id="email" name="email" type="email"></label>
+       </div>
+       <div class="age">
+       <label for="number" id="number-label">Age:<input placeholder="How Old Are You?" id="number" type="number" name="number" min="13" max="100" /></label>
+       </div>
+       <div class="container">
+         <label>how long have you been playing guitar?</label>
+           <select id="dropdown">
+             <option value="1">Less than 1 year</option>
+             <option value="2">1-2 years</option>
+             <option value="3">3-5 years</option>
+             <option value="4">5-10 years</option>
+             <option value="5">more than 10 years</option>
+          </select>
+        </div>
+      <fieldset>
+        <legend>have you participated in any guitar competitions?</legend>
+        <label><input type="radio" name="radio-button" value="1" />yes</label>
+        <label><input type="radio" name="radio-button" value="2"/>no</label>
+      </fieldset>
+      <fieldset>
+        <legend>What brand of guitar do you prefer?(select all that apply)</legend>
+       <div class="checkbox">
+       <input type="checkbox" id="checkbox1" value="1"><label>fender</label>
+       <input type="checkbox" id="checkbox2" value="2"><label>gibson</label>
+       <input type="checkbox" id="checkbox3" value="3"><label>ibanez</label>
+       <input type="checkbox" id="checkbox4" value="4"><label>martin</label>
+       <input type="checkbox" id="checkbox1" value="1"><label>epiphone</label>
+       <input type="checkbox" id="checkbox1" value="1"><label>yamaha</label>
+       <input type="checkbox" id="checkbox1" value="1"><label>other</label>
+       </div>
+      </fieldset>
+       <textarea placeholder="provide a comment..."></textarea>
+       <input id="submit" type="submit" value="submit">
+      
+     </form>
+
+   </body>
+   </html>
+
+
+
